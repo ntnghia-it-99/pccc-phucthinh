@@ -4,7 +4,6 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="vi" class="loading-site no-js">
 <!--<![endif]-->
-
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GENS830XWR"></script>

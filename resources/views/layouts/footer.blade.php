@@ -101,7 +101,6 @@
 
 <div class="absolute-footer dark medium-text-center small-text-center">
     <div class="container clearfix">
-
         <div class="footer-primary pull-left">
             <div class="copyright-footer">
                 Địa chỉ: 64 Đường số 4 - Khu dân cư Hiệp Thành III - Thủ dầu một - Bình Dương.<br />

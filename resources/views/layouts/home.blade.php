@@ -5,24 +5,24 @@
         <div class="slider-wrapper relative" id="slider-1364535285">
             <div class="slider slider-nav-circle slider-nav-large slider-nav-light slider-style-normal"
                 data-flickity-options='{
-            "cellAlign": "center",
-            "imagesLoaded": true,
-            "lazyLoad": 1,
-            "freeScroll": false,
-            "wrapAround": true,
-            "autoPlay": 6000,
-            "pauseAutoPlayOnHover" : true,
-            "prevNextButtons": true,
-            "contain" : true,
-            "adaptiveHeight" : true,
-            "dragThreshold" : 10,
-            "percentPosition": true,
-            "pageDots": true,
-            "rightToLeft": false,
-            "draggable": true,
-            "selectedAttraction": 0.1,
-            "parallax" : 0,
-            "friction": 0.6        }'>
+                    "cellAlign": "center",
+                    "imagesLoaded": true,
+                    "lazyLoad": 1,
+                    "freeScroll": false,
+                    "wrapAround": true,
+                    "autoPlay": 6000,
+                    "pauseAutoPlayOnHover" : true,
+                    "prevNextButtons": true,
+                    "contain" : true,
+                    "adaptiveHeight" : true,
+                    "dragThreshold" : 10,
+                    "percentPosition": true,
+                    "pageDots": true,
+                    "rightToLeft": false,
+                    "draggable": true,
+                    "selectedAttraction": 0.1,
+                    "parallax" : 0,
+                    "friction": 0.6        }'>
 
                 {{-- <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_572572172">
                     <a class="">
@@ -97,7 +97,6 @@
                                 nói cửa miệng của mỗi con người Phúc Thịnh <b> 0903333718 </b></p>
 
                             <div class="row" id="row-1310791306">
-
                                 <div id="col-1274381942" class="col medium-4 small-6 large-4">
                                     <div class="col-inner">
                                         <div class="box has-hover   has-hover box-text-bottom">
@@ -227,7 +226,6 @@
                             </div>
                         </div>
 
-
                         <style>
                             #page-header-1800414113 .page-title-inner {
                                 min-height: 43px;
@@ -303,13 +301,11 @@
                     padding-top: 0px;
                     padding-bottom: 20px;
                 }
-
                 #section_45798369 .section-bg.bg-loaded {
                     background-image: url(https://pcccpnn.com/wp-content/uploads/2020/12/Bg3-1.jpg);
                 }
             </style>
         </section>
-
 
         <section class="section danh-muc" id="section_2109766957">
             <div class="bg section-bg fill bg-fill  bg-loaded">

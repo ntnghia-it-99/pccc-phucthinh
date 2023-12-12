@@ -151,24 +151,24 @@
                     <div class="slider-wrapper relative" id="slider-948653236">
                         <div class="slider slider-nav-circle slider-nav-large slider-nav-light slider-style-normal is-draggable flickity-enabled"
                             data-flickity-options="{
-            &quot;cellAlign&quot;: &quot;center&quot;,
-            &quot;imagesLoaded&quot;: true,
-            &quot;lazyLoad&quot;: 1,
-            &quot;freeScroll&quot;: false,
-            &quot;wrapAround&quot;: true,
-            &quot;autoPlay&quot;: 6000,
-            &quot;pauseAutoPlayOnHover&quot; : true,
-            &quot;prevNextButtons&quot;: true,
-            &quot;contain&quot; : true,
-            &quot;adaptiveHeight&quot; : true,
-            &quot;dragThreshold&quot; : 10,
-            &quot;percentPosition&quot;: true,
-            &quot;pageDots&quot;: true,
-            &quot;rightToLeft&quot;: false,
-            &quot;draggable&quot;: true,
-            &quot;selectedAttraction&quot;: 0.1,
-            &quot;parallax&quot; : 0,
-            &quot;friction&quot;: 0.6        }" tabindex="0">
+                                &quot;cellAlign&quot;: &quot;center&quot;,
+                                &quot;imagesLoaded&quot;: true,
+                                &quot;lazyLoad&quot;: 1,
+                                &quot;freeScroll&quot;: false,
+                                &quot;wrapAround&quot;: true,
+                                &quot;autoPlay&quot;: 6000,
+                                &quot;pauseAutoPlayOnHover&quot; : true,
+                                &quot;prevNextButtons&quot;: true,
+                                &quot;contain&quot; : true,
+                                &quot;adaptiveHeight&quot; : true,
+                                &quot;dragThreshold&quot; : 10,
+                                &quot;percentPosition&quot;: true,
+                                &quot;pageDots&quot;: true,
+                                &quot;rightToLeft&quot;: false,
+                                &quot;draggable&quot;: true,
+                                &quot;selectedAttraction&quot;: 0.1,
+                                &quot;parallax&quot; : 0,
+                                &quot;friction&quot;: 0.6        }" tabindex="0">
                         </div><button class="flickity-button flickity-prev-next-button previous" type="button"
                             aria-label="Previous"><svg class="flickity-button-icon" viewBox="0 0 100 100">
                                 <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path>
@@ -180,8 +180,7 @@
                     </div>
                     <div class="loading-spin dark large centered" style="display: none;"></div>
                 </div>
-                <h1 style="text-align: right;"><span id="Ve_chung_toi"><span style="font-size: 160%;"><strong>Về
-                                chúng tôi</strong></span></span></h1>
+                <h1 style="text-align: right;"><span id="Ve_chung_toi"><span style="font-size: 160%;"><strong>Về chúng tôi</strong></span></span></h1>
                 <div><strong>&nbsp;</strong></div>
                 <ul>
                     <li><span style="background-color: #ffffff; color: #282828;">Tháng 2 năm 2008 <strong>Công ty TNHH TM & KT PCCC Phúc Thịnh</strong> được ra đời với mục đích

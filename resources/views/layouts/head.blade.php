@@ -17,7 +17,6 @@
                     <li class="nav-icon has-icon">
                         <a href="#" data-open="#main-menu" data-pos="center" data-bg="main-menu-overlay" data-color=""
                             class="is-small" aria-label="Menu" aria-controls="main-menu" aria-expanded="false">
-
                             <i class="fa fa-bars"></i>
                         </a>
                     </li>
@@ -40,7 +39,6 @@
                                                 }
                                             </style>
                                         </div>
-                                        
                                     </div>
                                 </div>
                                 <div id="col-507618877" class="col hide-for-medium medium-5 small-12 large-5">

@@ -1,9 +1,7 @@
 @extends('main')
 @section('content')
     <main id="main" class="">
-
         <div class="shop-container">
-
             <div class="container">
                 <div class="woocommerce-notices-wrapper"></div>
             </div>
@@ -76,7 +74,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            
                                 <div class="social-icons share-icons share-row relative"></div>
                             </div>
                             @endforeach
@@ -101,23 +98,10 @@
                                         id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
                                         <p>{!!$product->description!!}</p>
                                     </div>
-                                    <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--ux_global_tab panel entry-content "
-                                        id="tab-ux_global_tab" role="tabpanel" aria-labelledby="tab-title-ux_global_tab">
-                                        Thông tin thanh toán của chúng tôi:<br />
-
-                                        - Chủ tài khoản: CÔNG TY TNHH TM & KT PCCC PHÚC THỊNH <br />
-
-                                        - 6110201004338 - Agribank chi nhánh Bình Triệu<br />
-
-                                        <br />
-                                    </div>
-
                                 </div>
                             </div>
 
-
                             <div class="related related-products-wrapper product-section">
-
                                 <h3
                                     class="product-section-title container-width product-section-title-related pt-half pb-half uppercase">
                                     Sản phẩm tương tự </h3>
@@ -169,16 +153,12 @@
                                         </div>
                                     </div>
                                     @endforeach
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div><!-- shop container -->
 
         <script nitro-exclude>

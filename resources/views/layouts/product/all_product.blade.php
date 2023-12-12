@@ -59,7 +59,6 @@
                         </ul>
                     </nav>
                 </div>
-
             </div><!-- shop container -->
         </div>
     </div>
