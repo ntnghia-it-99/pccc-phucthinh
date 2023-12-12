@@ -37,8 +37,7 @@
                                     </div>
                                     <div class="price-wrapper">
                                         <span class="price"><span
-                                                class="woocommerce-Price-amount amount"><bdi>Liên hệ báo giá&nbsp;<span
-                                                        class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+                                                class="woocommerce-Price-amount amount"><bdi>Liên hệ báo giá&nbsp;</bdi></span></span>
                                     </div>
                                     <div class="add-to-cart-button"><a
                                         href="/chi-tiet/{{ $item->product_slug }}"

@@ -12,7 +12,7 @@ class ProjectController extends Controller
     public function project()
     {
         $service = DB::table('service')->get();
-        $project = DB::table('project')->get();
+        $project = DB::table('project')->where('status', 1)->get();
         return view('layouts.project.project')->with('service',$service)->with('project',$project);
     }
 
@@ -21,7 +21,7 @@ class ProjectController extends Controller
     }
 
     public function all_project(){
-    	$all_project = DB::table('project')->get();
+    	$all_project = DB::table('project')->paginate(5);
     	return view('admin.project.all_project')->with('all_project',$all_project);
     }
     public function save_project(Request $request){

@@ -18,7 +18,7 @@ class ProductController extends Controller
     public function all_product(){
     	$all_product = DB::table('product')
         ->join('category','category.category_id','=','product.category_id')
-        ->orderby('product.product_id','desc')->get();
+        ->orderby('product.product_id','desc')->paginate(5);
     	return view('admin.product.all_product')->with('all_product',$all_product);
     }
     public function save_product(Request $request){
@@ -26,7 +26,7 @@ class ProductController extends Controller
     	$data['name_product'] = $request->name;
         $data['product_slug'] = $this->UrlNormal($request->name);
     	$data['price'] = "Liên hệ báo giá";
-    	$data['brand_id'] = $request->brand;
+    	$data['brand_id'] = $request->brand ?? 1;
     	$data['description'] = $request->description;
         $data['category_id'] = $request->product_cate;
         $data['status'] = $request->status;
@@ -135,7 +135,7 @@ class ProductController extends Controller
         $data['price'] = "Liên hệ báo giá";
         $data['description'] = $request->description;
         $data['category_id'] = $request->product_cate;
-        $data['brand_id'] = $request->brand;
+        $data['brand_id'] = $request->brand ?? 1;
         $data['status'] = $request->status;
         $get_image = $request->file('image');
         

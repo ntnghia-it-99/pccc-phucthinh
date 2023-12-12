@@ -14,7 +14,7 @@ class ServiceController extends Controller
     }
 
     public function all_service(){
-    	$all_service = DB::table('service')->get();
+    	$all_service = DB::table('service')->paginate(5);
     	return view('admin.service.all_service')->with('all_service',$all_service);
     }
     public function save_service(Request $request){
