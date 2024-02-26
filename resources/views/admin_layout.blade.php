@@ -120,16 +120,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <li class="sub-menu">
                             <a href="javascript:;">
                                 <i class=" fa fa-bar-chart-o"></i>
-                                <span>Thương hiệu</span>
-                            </a>
-                            <ul class="sub">
-                                <li><a class="<?php if ($first_part=="them-thuong-hieu") {echo "active"; }?>" href="/them-thuong-hieu">Thêm thương hiệu</a></li>
-                                <li><a class="<?php if ($first_part=="danh-sach-thuong-hieu") {echo "active"; }?>" href="/danh-sach-thuong-hieu">Danh sách thương hiệu</a></li>
-                            </ul>
-                        </li>
-                        <li class="sub-menu">
-                            <a href="javascript:;">
-                                <i class=" fa fa-bar-chart-o"></i>
                                 <span>Dịch vụ</span>
                             </a>
                             <ul class="sub">

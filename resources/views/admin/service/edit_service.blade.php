@@ -17,7 +17,7 @@
 
                             <div class="position-center">
                                 @foreach($edit_service as $key => $service)
-                                <form role="form" action="{{URL::to('/save_edit_service/'.$service->service_id)}}" method="post" enctype="multipart/form-data">
+                                <form role="form" action="{{URL::to('/edit-service/'.$service->service_id)}}" method="post" enctype="multipart/form-data">
                                     {{ csrf_field() }}
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Tên dịch vụ</label>

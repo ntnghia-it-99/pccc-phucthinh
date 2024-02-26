@@ -21,6 +21,38 @@
                         </a>
                     </li>
                 </ul>
+                <div id="main-menu" class="mobile-sidebar no-scrollbar">
+                    <div class="sidebar-menu no-scrollbar text-center">
+                        <ul class="nav nav-sidebar nav-vertical nav-uppercase nav-anim">
+                            <li id="menu-item-62"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-62">
+                                <a href="/" aria-current="page" class="nav-top-link">Trang chủ</a>
+                            </li>
+                            <li id="menu-item-1375"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1375">
+                                <a href="/gioi-thieu/" class="nav-top-link">Giới thiệu</a></li>
+                            <li id="menu-item-697"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-697">
+                                <a href="/san-pham" class="nav-top-link">Sản phẩm</a></li>
+                            <li id="menu-item-1078"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1078 has-dropdown">
+                                <a class="nav-top-link">Dịch vụ<i class="fa fa-sort-down" style="margin-bottom:5px;margin-left:2px"></i></a>
+                                <ul class="sub-menu nav-dropdown nav-dropdown-default">
+                                    @foreach ($service as $key => $item)
+                                        <li id="menu-item-3802"
+                                            class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3802">
+                                            <a href="/detail/{{ $item->service_slug }}">{{ $item->name_service }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </li>
+                            <li id="menu-item-1331"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1331">
+                                <a href="/du-an/" class="nav-top-link">Dự án</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <!-- Left Elements -->
             <div class="flex-col hide-for-medium flex-left flex-grow">
@@ -83,40 +115,51 @@
                     </div>
                 </ul>
             </div> --}}
-            <?php 
-$directoryURI = $_SERVER['REQUEST_URI'];
-$path = parse_url($directoryURI, PHP_URL_PATH);
-$components = explode('/', $path);
-$first_part = $components[1];
-?>
+            <?php
+            $directoryURI = $_SERVER['REQUEST_URI'];
+            $path = parse_url($directoryURI, PHP_URL_PATH);
+            $components = explode('/', $path);
+            $first_part = $components[1];
+            ?>
             <div class="flex-col hide-for-medium flex-center">
-                <ul class="nav header-nav header-bottom-nav nav-center  nav-size-large nav-spacing-large nav-uppercase">
+                <ul
+                    class="nav header-nav header-bottom-nav nav-center  nav-size-large nav-spacing-large nav-uppercase">
                     <li id="menu-item-62"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-62 <?php if ($first_part=="") {echo "active"; }?>">
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-62 <?php if ($first_part == '') {
+                            echo 'active';
+                        } ?>">
                         <a href="/" aria-current="page" class="nav-top-link">Trang chủ</a>
                     </li>
                     <li id="menu-item-1375"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1375 <?php if ($first_part=="gioi-thieu") {echo "active"; }?>"><a
-                            href="/gioi-thieu/" class="nav-top-link">Giới thiệu</a></li>
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1375 <?php if ($first_part == 'gioi-thieu') {
+                            echo 'active';
+                        } ?>">
+                        <a href="/gioi-thieu/" class="nav-top-link">Giới thiệu</a></li>
                     <li id="menu-item-697"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-697 <?php if ($first_part=="san-pham" || $first_part=="chi-tiet") {echo "active"; }?>"><a
-                            href="/san-pham" class="nav-top-link">Sản phẩm</a></li>
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-697 <?php if ($first_part == 'san-pham' || $first_part == 'chi-tiet') {
+                            echo 'active';
+                        } ?>">
+                        <a href="/san-pham" class="nav-top-link">Sản phẩm</a></li>
                     <li id="menu-item-1078"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1078 has-dropdown <?php if ($first_part=="detail") {echo "active"; }?>">
-                        <a class="nav-top-link">Dịch vụ<i
-                                class="fa fa-sort-down" style="margin-bottom:5px;margin-left:2px"></i></a>
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1078 has-dropdown <?php if ($first_part == 'detail') {
+                            echo 'active';
+                        } ?>">
+                        <a class="nav-top-link">Dịch vụ<i class="fa fa-sort-down"
+                                style="margin-bottom:5px;margin-left:2px"></i></a>
                         <ul class="sub-menu nav-dropdown nav-dropdown-default">
-                            @foreach($service as $key => $item)
-                            <li id="menu-item-3802"
-                                class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3802">
-                                <a href="/detail/{{$item->service_slug}}">{{$item->name_service}}</a>
-                            </li>
+                            @foreach ($service as $key => $item)
+                                <li id="menu-item-3802"
+                                    class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3802">
+                                    <a href="/detail/{{ $item->service_slug }}">{{ $item->name_service }}</a>
+                                </li>
                             @endforeach
                         </ul>
                     </li>
                     <li id="menu-item-1331"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1331 <?php if ($first_part=="du-an" || $first_part=="chi-tiet") {echo "active"; }?>"><a
-                            href="/du-an/" class="nav-top-link">Dự án</a></li>
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1331 <?php if ($first_part == 'du-an') {
+                            echo 'active';
+                        } ?>">
+                        <a href="/du-an/" class="nav-top-link">Dự án</a></li>
                 </ul>
             </div>
         </div>

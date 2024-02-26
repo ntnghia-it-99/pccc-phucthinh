@@ -44,8 +44,11 @@ Route::get('/du-an', 'ProjectController@project');
 
 //category
 Route::get('/them-the-loai', 'CategoryController@add_category');
+Route::get('/sua-the-loai/{category_id}', 'CategoryController@edit_category');
 Route::get('/danh-sach-the-loai', 'CategoryController@all_category');
 Route::post('/save-category-product', 'CategoryController@save_category');
+Route::post('/update-category/{category_id}', 'CategoryController@update_category');
+Route::get('/delete-category/{category_id}', 'CategoryController@delete_category');
 //brand
 Route::get('/them-thuong-hieu', 'CategoryController@add_brand');
 Route::get('/danh-sach-thuong-hieu', 'CategoryController@all_brand');
@@ -55,6 +58,6 @@ Route::get('/them-dich-vu', 'ServiceController@add_service');
 Route::get('/danh-sach-dich-vu', 'ServiceController@all_service');
 Route::get('/sua-dich-vu/{service_id}', 'ServiceController@edit_service');
 Route::get('/detail/{service_slug}', 'ServiceController@detail_service');
-Route::post('/edit-service', 'ServiceController@save_edit_service');
+Route::post('/edit-service/{service_id}', 'ServiceController@save_edit_service');
 Route::get('/xoa-dich-vu/{service_id}', 'ServiceController@delete_service');
 Route::post('/save-service', 'ServiceController@save_service');

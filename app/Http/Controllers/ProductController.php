@@ -138,7 +138,11 @@ class ProductController extends Controller
         $data['brand_id'] = $request->brand ?? 1;
         $data['status'] = $request->status;
         $get_image = $request->file('image');
-        
+        $findProduct = Product::find($product_id);
+        $path = public_path('images/product/'.$findProduct->image);
+        if (file_exists($path)) {
+            unlink($path);
+        }
         if($get_image){
             $get_name_image = $get_image->getClientOriginalName();
             $name_image = current(explode('.',$get_name_image));
@@ -168,7 +172,6 @@ class ProductController extends Controller
          //slide
         $cate_product = DB::table('category')->where('status','0')->orderby('category_id','desc')->get(); 
         $details_product = DB::table('product')
-        ->join('category','category.category_id','=','product.category_id')
         ->where('product.product_slug',$product_slug)->get();
         $service = DB::table('service')->get();
         foreach($details_product as $key => $value){

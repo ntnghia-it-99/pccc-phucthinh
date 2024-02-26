@@ -108,8 +108,8 @@ function UrlNormal($str)
 }
     public function save_edit_service(Request $request,$service_id){
         $data = array();
-        $data['name_service'] = $request->name;
-        $data['service_slug'] =  $this->convertToSlug($request->name);
+        $data['name_service'] = $request->name_service;
+        $data['service_slug'] =  $this->UrlNormal($request->name);
         $data['description'] = $request->description;
         $data['status'] = $request->status;
         $data['order'] = $request->order;

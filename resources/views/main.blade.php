@@ -2647,8 +2647,8 @@
     </style>
 </head>
 
-<body
-    class="home page-template page-template-page-blank page-template-page-blank-php page page-id-2 theme-flatsome ot-vertical-menu woocommerce-no-js lightbox nav-dropdown-has-arrow">
+<body class="home page-template page-template-page-blank page-template-page-blank-php page page-id-2 theme-flatsome ot-vertical-menu woocommerce-no-js lightbox nav-dropdown-has-arrow">
+    
     <div id="wrapper">
         <header id="header" class="header ">
             @include('layouts.head')

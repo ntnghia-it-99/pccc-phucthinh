@@ -234,22 +234,5 @@
         </div>
     </div>
     </div>
-    <script nitro-exclude="">
-        var heartbeatData = new FormData(); heartbeatData.append('nitroHeartbeat', '1');
-        fetch(location.href, { method: 'POST', body: heartbeatData, credentials: 'omit' });
-    </script>
-    <script nitro-exclude="">
-        document.cookie = 'nitroCachedPage=' + (!window.NITROPACK_STATE ? '0' : '1') + '; path=/; SameSite=Lax';
-    </script>
-    <script nitro-exclude="">
-        if (!window.NITROPACK_STATE || window.NITROPACK_STATE != 'FRESH') {
-            var proxyPurgeOnly = 0;
-            if (typeof navigator.sendBeacon !== 'undefined') {
-                var nitroData = new FormData(); nitroData.append('nitroBeaconUrl', 'aHR0cHM6Ly9wY2NjcG5uLmNvbS9naW9pLXRoaWV1Lw=='); nitroData.append('nitroBeaconCookies', 'W10='); nitroData.append('nitroBeaconHash', '27990507c8a213849c07eebe80af3ea10c0b85e356d6ce3d64f9a079028b08b9615042b4a7a17e54bba93be0a1a5ab18e5ec6b2c5a209e9a32c40eb5853d26ba'); nitroData.append('proxyPurgeOnly', ''); nitroData.append('layout', 'page'); navigator.sendBeacon(location.href, nitroData);
-            } else {
-                var xhr = new XMLHttpRequest(); xhr.open('POST', location.href, true); xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); xhr.send('nitroBeaconUrl=aHR0cHM6Ly9wY2NjcG5uLmNvbS9naW9pLXRoaWV1Lw==&nitroBeaconCookies=W10=&nitroBeaconHash=27990507c8a213849c07eebe80af3ea10c0b85e356d6ce3d64f9a079028b08b9615042b4a7a17e54bba93be0a1a5ab18e5ec6b2c5a209e9a32c40eb5853d26ba&proxyPurgeOnly=&layout=page');
-            }
-        }
-    </script>
 </main>
 @endsection

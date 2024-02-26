@@ -33,20 +33,6 @@ class BrandController extends Controller
     	Session::put('message','Thêm thương hiệu sản phẩm thành công');
     	return redirect('them-thuong-hieu');
     }
-    public function unactive_brand_product($brand_product_id){
-        $this->AuthLogin();
-        DB::table('tbl_brand')->where('brand_id',$brand_product_id)->update(['brand_status'=>1]);
-        Session::put('message','Không kích hoạt thương hiệu sản phẩm thành công');
-        return redirect('all-brand-product');
-
-    }
-    public function active_brand_product($brand_product_id){
-        $this->AuthLogin();
-        DB::table('tbl_brand')->where('brand_id',$brand_product_id)->update(['brand_status'=>0]);
-        Session::put('message','Kích hoạt thương hiệu sản phẩm thành công');
-        return redirect('all-brand-product');
-
-    }
     public function edit_brand_product($brand_product_id){
         $this->AuthLogin();
 
